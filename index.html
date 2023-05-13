@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylereponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>My News</title>
+</head>
+
+<body class="preloading">
+    <div id="search"><span class="home">My news</span> <i class="fas fa-search symbolSearch"></i></div>
+
+    <div class="load">
+        <img src="./img/load.gif">
+    </div>
+
+    <div class="overlay">
+        <div class="grid wide zindex">
+            <div class="searchInput">
+                <label>Keysword</label>
+                <input class="keySubmit" type="text" placeholder="nhập từ khóa tìm kiếm">
+                <button class="btn startSearch">Search</button>
+                <i class="fas fa-times symbolClose"></i>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="showNew grid wide">
+        <!-- noi se chua tin tuc -->
+    </div>
+
+    <div id="bodyNew" style="display: none;">
+        <div class="row">
+            <a class="col l-4 m-5 c-12 " href="">
+                <img src="{{src}}" alt="" class="img">
+            </a>
+
+            <div class="col l-8 m-7 c-12">
+                <div class="title">
+                    <a href=""><strong>{{title}}</strong></a>
+                </div><br>
+                <div class="time"><i>{{time}}</i></div><br>
+                <div class="description">{{description}}</div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
